@@ -4,6 +4,7 @@ body {
   line-height: 1;
 }
 
+/* area where hourly events are typed and displayed */
 textarea{
   background: transparent;
   border: none;
@@ -13,6 +14,7 @@ textarea{
   padding: 10px;
 }
 
+/* styling for the jumbotron */
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -25,38 +27,46 @@ textarea{
   white-space: pre-wrap;
 }
 
+/* container for an hour marker and a row, 
+which contains the text area and save button */
 .time-block{
   text-align: center;
   border-radius: 15px;
 }
 
+/* container for the text area and save button*/
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
 }
 
+/* hour column on the left side */
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
 }
 
+/* gray styling for event in the past */
 .past {
   background-color: #d3d3d3;
   color: white;
 }
 
+/* red styling for event in the present */
 .present {
   background-color: #ff6961;
   color: white;
 }
 
+/* green styling for event in the future */
 .future {
   background-color: #77dd77;
   color: white;
 }
 
+/* Teal styling for a save button */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -65,6 +75,8 @@ textarea{
   color: white;
 }
 
+/* styling for the save button when hovered over */
+/* white icon turns black */
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
