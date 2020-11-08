@@ -33,58 +33,55 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div id="calendar-area" class="container">
+    <div id="calendar-area" class="container page-content">
       <!-- Timeblocks go here -->
-      <ol>
-        <li>
-          <div class="row">
-            <p class="hour col-1">9AM</p>
-            <p class="textarea col-10" id="nineAm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">10AM</p>
-            <p class="textarea col-10" id="tenAm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">11AM</p>
-            <p class="textarea col-10" id="elevenAm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">12PM</p>
-            <p class="textarea col-10" id="twelvePm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1" >1PM</p>
-            <p class="textarea col-10" id="onePm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">2PM</p>
-            <p class="textarea col-10" id="twoPm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">3PM</p>
-            <p class="textarea col-10" id="threePm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">4PM</p>
-            <p class="textarea col-10" id="fourPm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-          <div class="row">
-            <p class="hour col-1">5PM</p>
-            <p class="textarea col-10" id="fivePm">some task</p>
-            <button class="saveBtn col-1"></button>
-          </div>
-        </li>
-
-      </ol>
+      <form id="task-form">
+        <div class="row form-group">
+          <p class="hour col-1">9AM</p>
+          <input type="text" onfocus="this.value=''" name="task-name-nineBtn" class="textarea col-10" id="nineAm"></input>
+          <button class="saveBtn col-1" id="nineBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">10AM</p>
+          <input type="text" name="task-name-tenBtn" class="textarea col-10" id="tenAm"></input>
+          <button class="saveBtn col-1" id="tenBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">11AM</p>
+          <input type="text" name="task-name-elevenBtn" class="textarea col-10" id="elevenAm"></input>
+          <button class="saveBtn col-1" id="elevenBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">12PM</p>
+          <input type="text" name="task-name-twelveBtn" class="textarea col-10" id="twelvePm"></input>
+          <button class="saveBtn col-1" id="twelveBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1" >1PM</p>
+          <input type="text" name="task-name-oneBtn" class="textarea col-10" id="onePm"></input>
+          <button class="saveBtn col-1" id="oneBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">2PM</p>
+          <input type="text" name="task-name-twoBtn" class="textarea col-10" id="twoPm"></input>
+          <button class="saveBtn col-1" id="twoBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">3PM</p>
+          <input type="text" name="task-name-threeBtn" class="textarea col-10" id="threePm"></input>
+          <button class="saveBtn col-1" id="threeBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">4PM</p>
+          <input type="text" name="task-name-fourBtn" class="textarea col-10" id="fourPm"></input>
+          <button class="saveBtn col-1" id="fourBtn"></button>
+        </div>
+        <div class="row form-group">
+          <p class="hour col-1">5PM</p>
+          <input type="text" name="task-name-fiveBtn" class="textarea col-10" id="fivePm"></input>
+          <button class="saveBtn col-1" id="fiveBtn"></button>
+        </div>
+      </form>
     </div>
 
     <!-- Link to JQuery -->
